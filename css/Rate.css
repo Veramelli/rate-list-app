@@ -1,0 +1,53 @@
+.rate__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 15rem;
+  text-align: center;
+}
+
+.rate__title {
+  box-sizing: border-box;
+  padding-top: 15px;
+  color: beige;
+  height: 3rem;
+}
+
+.rate__prise {
+  box-sizing: border-box;
+  padding: 25px 0;
+  color: rgb(255, 255, 239);
+  font-size: 20px;
+}
+
+.prise {
+  font-size: 40px;
+}
+
+.rate__speed {
+  box-sizing: border-box;
+  padding: 0.8rem;
+  height: 3rem;
+  background-color: rgb(217, 217, 217);
+  color: rgb(91, 91, 91);
+}
+
+.rate__text {
+  box-sizing: border-box;
+  padding: 8px;
+  min-height: 4rem;
+  line-height: 2;
+  font-size: 14px;
+  background-color: rgb(179, 179, 179);
+  color: rgb(91, 91, 91);
+}
+
+.selected {
+  position: relative;
+  top: -10px;
+  width: 16rem;
+  box-shadow: 2px 2px 10px grey;
+}
+.selected .rate__title {
+  height: 3.8rem;
+}
