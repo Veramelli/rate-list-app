@@ -27,7 +27,7 @@ export default function Rate(props) {
       <div className="rate__speed">{`до ${props.card.speed} Мб/сек`}</div>
       <div className="rate__text">Объем включенного траффика не ограничен</div>
       <button className="rate__button" onClick={handleChange}>
-        {pressed ? "Cменить" : "Выбрать тариф"}
+        {pressed ? "Cменить тариф" : "Выбрать тариф"}
       </button>
     </div>
   );
