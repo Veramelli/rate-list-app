@@ -20,7 +20,6 @@ const data = [
     prise: 550,
     speed: 100,
     classNumber: "three",
-    isSelected: true,
     titleColor: "rgb(195, 72, 1)",
     priceColor: "rgba(195, 72, 1, 0.725)",
   },

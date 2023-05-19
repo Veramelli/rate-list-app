@@ -1,14 +1,15 @@
+import React, { useState } from "react";
 import "./Rate.scss";
 
-let rateSelected = "";
+export default function Rate(props) {
+  const [pressed, setPressed] = useState(false);
 
-function Rate(props) {
+  function handleChange() {
+    setPressed(!pressed);
+  }
+
   return (
-    <div
-      className={`rate__wrapper ${
-        props.card.isSelected ? (rateSelected = "selected") : ""
-      }`}
-    >
+    <div className={`rate__wrapper ${pressed ? "selected" : ""}`}>
       <div
         className={`rate__title title__${props.card.classNumber}`}
         style={{
@@ -21,12 +22,13 @@ function Rate(props) {
           backgroundColor: props.card.priceColor,
         }}
       >
-        <div className="prise">{props.card.prise}</div>руб/мес{" "}
+        <div className="prise">{props.card.prise}</div>руб/мес
       </div>
       <div className="rate__speed">{`до ${props.card.speed} Мб/сек`}</div>
       <div className="rate__text">Объем включенного траффика не ограничен</div>
+      <button className="rate__button" onClick={handleChange}>
+        Выбрать тариф
+      </button>
     </div>
   );
 }
-
-export default Rate;
